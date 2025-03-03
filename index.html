@@ -3,61 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Accessible Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Random Dog Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>My Blog</h1>
-        <h2>Insights, Thoughts, and Stories</h2>
-
-        <!-- Main Navigation -->
-        <nav aria-label="Main Navigation" role="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>🐶 Dog Breed Finder</h1>
+        <select id="breed-select">
+            <option value="">Select a Breed</option>
+        </select>
+        <button id="search-breed-btn">Search Breed</button>
+        <button id="fetch-dog-btn">Get a Random Dog</button>
     </header>
 
-    <!-- Main Content Section -->
     <main>
-
-        <!-- First Blog Post -->
-        <article>
-            <h2>My First Blog Post</h2>
-            <p><strong>Published on:</strong> <time datetime="2025-02-17">February 17, 2025</time></p>
-            <img src="https://via.placeholder.com/600x300" alt="A placeholder image representing the blog topic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Aenean feugiat sapien vel est ultrices, at laoreet risus tincidunt.</p>
-            <a href="#">Read More</a>
-        </article>
-
-        <!-- Second Blog Post -->
-        <article>
-            <h2>Another Interesting Post</h2>
-            <p><strong>Published on:</strong> <time datetime="2025-02-10">February 10, 2025</time></p>
-            <img src="https://via.placeholder.com/600x300" alt="A placeholder image representing the blog topic">
-            <p>Ut sed tellus in sapien consectetur facilisis. Sed id quam nec urna rhoncus feugiat. Duis aliquet justo nec sapien dapibus, nec aliquet ligula scelerisque.</p>
-            <a href="#">Read More</a>
-        </article>
-
+        <div id="dog-container"></div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        <nav aria-label="Footer Navigation" role="navigation">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2025 My Blog. All rights reserved.</p>
+        <p>&copy; 2025 Dog Gallery. All rights reserved.</p>
     </footer>
 
+    <script type="module" src="scripts/app.js"></script>
 </body>
 </html>
